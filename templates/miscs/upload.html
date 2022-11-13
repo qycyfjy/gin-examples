@@ -1,0 +1,24 @@
+{{define "misc/upload.html"}}
+<html>
+
+<head>
+    <title>Upload Demo</title>
+</head>
+
+<body>
+    <div id="single-upload">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input type="submit" value="上传">
+        </form>
+    </div>
+    <div id="multi-upload">
+        <form action="/upload-multiple" method="post" enctype="multipart/form-data">
+            <input type="file" name="files" id="files" multiple>
+            <input type="submit" value="上传">
+        </form>
+    </div>
+</body>
+
+</html>
+{{end}}

@@ -1,0 +1,8 @@
+syntax="proto3";
+
+option go_package="/protos";
+
+message Greeting {
+    string message = 1;
+    repeated int64 label = 2;
+}
